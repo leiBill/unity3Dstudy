@@ -1,0 +1,12 @@
+class CanSee:MonoBehaviour{
+    public float viewRadius=2.0f;//the max distance the gameobject can see it
+    public float viewAngle=90.0f;//the angle of the gameobject
+    public Transfrom targetObject;// the target transform 
+    void Update(){
+        float distance=(targetObject.position-transfrom.position).maginuted;
+        float angle=Vector3.Angle(targetObject.position,transform.position);
+        if(disatance<viewRadius&&angle<viewAngle*0.5f){
+            // to do sth
+        }
+    }
+}
